@@ -1,3 +1,5 @@
+- Add set tags scripts
+- Update CHANGES.md
 - Update .travis.yml
 - Add TEST.md
 - Update .travis.yml
