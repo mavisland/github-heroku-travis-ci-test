@@ -1,15 +1,23 @@
 language: node_js
 sudo: required
 cache:
-   directories:
-     - node_modules
+  directories:
+  - node_modules
 node_js:
-  - 8
+- 8
 before_install:
-  - npm install -g node-gyp
+- npm install -g node-gyp
 before_script:
-  - export NODE_ENV=production
-  - npm install
+- export NODE_ENV=production
+- npm install
 script:
-  - npm run lint
-  - npm run test
+- npm run lint
+- npm run test
+deploy:
+  provider: releases
+  api_key:
+    secure: oaco089/m+HdVRrq4+gKBbAT3T6uCo86ad5j8Vw1tx65egKuaSYzgjLk0lizXfc9T7dNalpo0mfFKWJMihdML9nla/Fnch4sNl/DKJgkDg25o4tUblrCjJ45Snl+RCvvsoJIjxWryLjJJU1t6Bsys1xoqR6++PyV+ohMgDydc1EZ3l3q+Zy5EVgRds7SFBGbfp85VVRMWNwsZweBeFEfp41GoDX3pAfZsBpxPyINccgnS1h+234McwK8rTFcJoZtFfh3mrpVjm+ydXE49jxB7gL3+VWgve4+OOvB9BjYZJm9WOC/dFGQAF9YvN4jkQqU6g6N4e4Je6iH+SIs/Q0lZvCwRDMna6CyNDfP0iSkZ80/t0cCUL0EPWD7gc9nw4ojQ2tFAiIbgP7fGu7XZ7mgs02K2BeHJ3r6TXdMPjLWjHncNv/t+6GFApGYVmHpFwEG8kUBwHQSMq5biBX8yztRFDMa//B481zqpVuNproMkazV7K6mov7W5CWNeWneVbxftNDHEIOaSqirWXVVWXCNraP7TwkjfOTaSHOhvP4LK4sArnB5hRDWShO6SeoY7MpcfQIW8ncnoxfHAoW7Wm6LQSa9Mdmk6CPj2Xit4/5FDNcLwX29TUi3JZuR/nz2IVFkXqedeGnEvZ/3oonZthgEoN7UEQdJ53xdIjwg+oqdEbQ=
+  file: dist/CHANGES.md
+  on:
+    repo: mavisland/github-heroku-travis-ci-test
+    tags: true
