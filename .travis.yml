@@ -23,7 +23,7 @@ before_deploy:
   - git config --global user.name "Tanju Yıldız"
   - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$TAGPERM@github.com/mavisland/github-heroku-travis-ci-test --tags
+  - git push origin --tags
   - ls -R
 
 deploy:

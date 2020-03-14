@@ -1,3 +1,4 @@
+- Update .travis.yml
 - Update set_tags.sh
 - Add set tags scripts
 - Update CHANGES.md
