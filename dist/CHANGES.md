@@ -1,3 +1,4 @@
+- Update .travis.yml
 - Add TEST.md
 - Update .travis.yml
 - Update CHANGES.md
