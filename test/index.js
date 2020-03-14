@@ -1,6 +1,8 @@
 let chai = require("chai");
 let chaiHttp = require("chai-http");
+/*eslint-disable */
 let should = chai.should();
+/*eslint-enable */
 let server = require("../app");
 
 chai.use(chaiHttp);
