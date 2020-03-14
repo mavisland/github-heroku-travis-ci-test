@@ -1,4 +1,8 @@
 - Update .travis.yml
+- Update CHANGES.md
+- Update .travis.yml
+- Add CHANGES.md
+- Update .travis.yml
 - Update README.md
 - Add new test props
 - Test
