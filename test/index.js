@@ -18,6 +18,8 @@ describe("Node Server", () => {
         res.body.should.have.property("name").to.be.an("string");
         res.body.should.have.property("surname").to.be.an("string");
         res.body.should.have.property("age").to.be.an("number");
+        res.body.should.have.property("location").to.be.an("string");
+        res.body.should.have.property("job").to.be.an("string");
         done();
       });
   });
