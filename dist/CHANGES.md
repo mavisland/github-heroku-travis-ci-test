@@ -1,3 +1,4 @@
+- Update CHANGES.md
 - Update .travis.yml
 - Update CHANGES.md
 - Update .travis.yml
