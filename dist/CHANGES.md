@@ -1,3 +1,4 @@
+- Update .travis.yml
 - Update README.md
 - Add new test props
 - Test
