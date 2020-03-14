@@ -13,5 +13,10 @@
     "less-middleware": "^3.1.0",
     "morgan": "~1.9.1",
     "twig": "~0.10.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.0"
   }
 }
