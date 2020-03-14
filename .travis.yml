@@ -20,7 +20,7 @@ script:
 
 before_deploy:
   - git config --global user.email "ben@tanjuyildiz.com"
-  - git config --global user.name "Tanju Yıldız"
+  - git config --global user.name "mavisland"
   - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
   - git push origin --tags
